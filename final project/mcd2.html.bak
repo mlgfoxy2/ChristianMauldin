@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+<title>Mcdonald</title>
+<meta charset="utf-8" />
+
+<link rel="stylesheet" type="text/css" href="mcd2.css" />
+
+</head>
+
+<body>
+
+<div style="text-align: center">
+	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/McDonald%27s_logo.svg/220px-McDonald%27s_logo.svg.png" width="220" height="167" alt="Oceanside logo" style="box-shadow: 10px 10px 12px #888888" />
+</div>
+
+<br /><table class="menu" style="border-style: none">
+	<tr>
+
+		<td class="menupipe">|</td>
+		<td class="menuicon"><a href="file:///C:/Users/christian.mauldin/OneDrive%20-%20Great%20Oaks%20Career%20Campuses/documents/ChapterFiles/Chapter2/mcd2.html">Home</a></td>
+		<td class="menupipe">|</td>
+		
+	</tr>
+</table>
+
+<table style="border-spacing: 10px; padding: 5px">
+
+<caption>Mcdonalds™</caption>
+
+	<tr class="stripe">
+		<th rowspan="3">Lunch
+		<br />
+		</th>
+		<td class="bolder">Quarter Pounder</td>
+		<td>$3.79</td>
+		
+	</tr>
+
+	<tr>
+		<td class="bolder">Large Dr. Pepper</td>
+		<td>$1.00</td>
+	</tr>
+
+	<tr class="stripe">
+		<td class="bolder">Large Fry</td>
+		<td>$3.59</td>
+	</tr>
+
+	<tr>
+		<th rowspan="3">Dinner
+		<br />
+		</th>
+		<td class="bolder">Double Quarter Pounder</td>
+		<td>$4.79</td>
+	</tr>
+
+	<tr class="stripe">
+		<td class="bolder">Large Dr.Pepper</td>
+		<td>$1.00</td>
+	</tr>
+
+	<tr>
+		<td class="bolder">Large Fry</td>
+		<td>$3.59</td>
+	</tr>
+</table>

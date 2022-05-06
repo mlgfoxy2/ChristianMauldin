@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Lab 6-1</title>
+<style type="text/css">
+<!--
+
+body	{float: center;
+		color: #FF0000;
+		font-style: italic;
+		font-size: small;}
+input, textarea {background-color: #000000;
+		color: #FF0000;}
+
+-->
+</style>
+</head>
+<body style="background-color:black;">
+
+<form methods="post" action="mailto:email@isp.com">
+
+<header>
+	<h2 style="text-align: center"><img src="https://www.bagsunlimited.com/Images/BoxPro%20Banner.jpg" width="600" height="316" alt="food" /></td>
+</header>
+
+<h2 style="text-align: center">Game Survey</h2>
+
+<p style="text-align: center">First name:
+<input name="first" type="text" size="10" maxlength="10" />
+Last Name: <input name="last" type="text" size="15" maxlength="15" />
+<br>
+<br/>Address: <input name="address" type="text" size="35" maxlength="35" />
+<br>
+<br/>City: <input name="city" type="text" size="15" maxlength="15" />
+<br>
+<br/>State: <input name="state" type="text" size="2" maxlength="2" />
+<br>
+<br/>Zip: <input name="zip" type="text" size="10" maxlength="10" />
+<br>
+<br/>E-mail Address: <input name="email" type="text" size="25" maxlength="25" /></p>
+
+<hr />
+
+<p style="text-align: center">Have you ever purchased a game?
+	<input name="purchase" onchange="checkIfOther();" id="games" type="Radio" value="1" />Yes
+	<input name="purchase" onchange="checkIfOther();" id="not" type="Radio" value="2" />No</p>
+	
+<div id="3" style="display:none">  
+<p style="text-align: center">Do you prefer online shopping or in person stores?
+	<select name="shopping" onchange="checkIfOther();" id="dropDown1">
+		<option value="blank"> </option>
+		<option value="In Store">In Store</option>
+		<option value="Online">Online</option>
+	</select></p>
+	
+<div id="In Store1" style="display:none">  
+          <label><p style="text-align: center">Please explain why you prefer in person shopping:</label><input type="text" id="otherText"/></p>
+</div>
+
+<div id="Online1" style="display:none">  
+          <label><p style="text-align: center">Please explain why you prefer online shopping:</label><input type="text" id="otherText"/></p>
+</div>
+	
+<div id="In Store2" style="display:none"> 
+<p style="text-align: center">Where do you usually buy video games at?
+	<select name="store" onchange="checkIfOther();" id="dropDown2">
+		<option value="blank"> </option>
+		<option>Best Buy</option>
+		<option>Gamestop</option>
+		<option>Walmart</option>
+		<option value="other1">Other</option>
+	</select></p>
+</div>
+		
+<div id="other1" style="display:none">  
+          <label><p style="text-align: center">Other(Please explain):</label><input type="text" id="otherText"/></p>
+</div>
+
+<div id="Online2" style="display:none"> 
+<p style="text-align: center">Where do you usually buy video games at?
+	<select name="store" onchange="checkIfOther();" id="dropDown3">
+		<option value="blank"> </option>
+		<option>Amazon</option>
+		<option>eBay</option>
+		<option>Gamestop</option>
+		<option value="other2">Other</option>
+	</select></p>
+</div>
+
+<div id="other2" style="display:none">  
+          <label><p style="text-align: center">Other(Please explain):</label><input type="text" id="otherText"/></p>
+</div>
+
+<p style="text-align: center">How does shopping online compare to shopping in a store?
+	<br /><textarea name="text1" rows="6" cols="100"></textarea></p>
+</div>
+	
+<p><input type="submit" value="Submit" />
+<input type="reset" value="Reset" /></p>
+
+<script>
+
+    function checkIfOther(){
+	
+
+        a = document.getElementById("games"); 
+		
+        if(a.value == "1")           
+
+            document.getElementById("3").setAttribute("style","display:inline");
+
+        else
+
+            document.getElementById("3").setAttribute("style","display:none");
+	    
+		
+
+        a = document.getElementById("dropDown1"); 
+		
+        if(a.value == "In Store")           
+
+            document.getElementById("In Store1").setAttribute("style","display:inline");
+
+        else
+
+            document.getElementById("In Store1").setAttribute("style","display:none");
+	    
+		
+		
+        a = document.getElementById("dropDown1");        
+
+        if(a.value == "Online")           
+
+            document.getElementById("Online1").setAttribute("style","display:inline");
+
+        else
+
+            document.getElementById("Online1").setAttribute("style","display:none");
+       
+
+
+        a = document.getElementById("dropDown1"); 
+		
+        if(a.value == "In Store")           
+
+            document.getElementById("In Store2").setAttribute("style","display:inline");
+
+        else
+
+            document.getElementById("In Store2").setAttribute("style","display:none");
+	    
+		
+		
+        a = document.getElementById("dropDown1");        
+
+        if(a.value == "Online")           
+
+            document.getElementById("Online2").setAttribute("style","display:inline");
+
+        else
+
+            document.getElementById("Online2").setAttribute("style","display:none");
+			
+			
+			
+        a = document.getElementById("dropDown2"); 
+		
+        if(a.value == "other1")           
+
+            document.getElementById("other1").setAttribute("style","display:inline");
+
+        else
+
+            document.getElementById("other1").setAttribute("style","display:none");
+
+		
+		
+        a = document.getElementById("dropDown3"); 
+		
+        if(a.value == "other2")           
+
+            document.getElementById("other2").setAttribute("style","display:inline");
+
+        else
+
+            document.getElementById("other2").setAttribute("style","display:none");
+			
+		
+		
+        }
+</script>
+</form>
+</body>
+</html>
+
